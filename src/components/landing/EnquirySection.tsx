@@ -10,7 +10,7 @@ import { EXPERIENCE_OPTIONS, INTEREST_OPTIONS } from "./data";
 import { enquirySchema, type EnquiryValues } from "./enquiry-schema";
 import { useEnquiry } from "./enquiry-context";
 
-function FieldError({ id, message }: { id: string; message?: string }) {
+function FieldError({ id, message }: { id: string; message?: string | undefined }) {
   if (!message) return null;
   return (
     <p id={id} role="alert" className="mt-1.5 text-xs text-destructive">
@@ -34,7 +34,7 @@ export function EnquirySection() {
     formState: { errors, isSubmitting },
   } = useForm<EnquiryValues>({
     resolver: zodResolver(enquirySchema),
-    defaultValues: { name: "", email: "", interest: undefined, experience: undefined },
+    defaultValues: { name: "", email: "" },
   });
 
   useEffect(() => {
