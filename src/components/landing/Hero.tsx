@@ -33,7 +33,7 @@ export function Hero() {
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <Button variant="hero" size="xl" onClick={() => openEnquiry()}>
-              Enrol Now <ArrowRight />
+              Enroll Now <ArrowRight />
             </Button>
             <Button variant="glass" size="xl" asChild>
               <a href="#courses">

@@ -42,7 +42,7 @@ export function SiteHeader() {
         </ul>
         <div className="flex items-center gap-2">
           <Button variant="hero" size="pill" className="hidden sm:inline-flex" onClick={() => openEnquiry()}>
-            Enrol Now
+            Enroll Now
           </Button>
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
@@ -77,7 +77,7 @@ export function SiteHeader() {
                     openEnquiry();
                   }}
                 >
-                  Enrol Now
+                  Enroll Now
                 </Button>
               </div>
             </SheetContent>

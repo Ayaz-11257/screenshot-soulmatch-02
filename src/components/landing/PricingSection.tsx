@@ -55,13 +55,13 @@ export function PricingSection() {
               className="mt-8 w-full"
               onClick={() => openEnquiry(PLAN_INTEREST[p.name])}
             >
-              {p.price === "Custom" ? "Contact us" : `Enrol in ${p.name}`}
+              {p.price === "Custom" ? "Contact us" : `Enroll in ${p.name}`}
             </Button>
           </article>
         ))}
       </div>
       <p className="mt-10 text-center text-xs text-muted-foreground">
-        Illustrative pricing only. Final fees, taxes and payment options would be confirmed before enrolment.
+        Illustrative pricing only. Final fees, taxes and payment options would be confirmed before Enrollment.
       </p>
     </Section>
   );
