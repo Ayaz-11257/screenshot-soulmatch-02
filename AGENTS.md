@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Landing page is one scrolling page at `/` composed of section components in `src/components/landing/`; all copy/content lives in `landing/data.ts` so sections stay presentational.
+- Enquiry form validation lives in `landing/enquiry-schema.ts` (zod) and is covered by `src/test/enquiry-schema.test.ts`; reuse the schema server-side if a backend is added.
+- "Enrol/Enquire" CTAs go through `useEnquiry().openEnquiry(interest)` so they pre-select the form's interest and scroll to it.
