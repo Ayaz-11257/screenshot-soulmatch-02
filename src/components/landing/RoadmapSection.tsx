@@ -12,7 +12,7 @@ export function RoadmapSection() {
         description="Three stages, each building on the last. Join at the stage that matches your experience."
       />
       <ol className="relative mt-16 grid gap-6 lg:grid-cols-3">
-        <div aria-hidden className="absolute left-0 right-0 top-[2.1rem] hidden h-px bg-gradient-primary opacity-60 lg:block" />
+        <div aria-hidden className="absolute left-8 right-[31%] top-[2.1rem] hidden h-px bg-gradient-primary opacity-60 lg:block" />
         {ROADMAP.map((s) => (
           <li key={s.stage} className="relative">
             <div className="relative z-10 mb-6 grid size-[4.25rem] place-items-center rounded-2xl border border-primary/40 bg-background font-mono text-lg font-semibold text-highlight shadow-glow">

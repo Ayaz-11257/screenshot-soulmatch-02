@@ -21,7 +21,7 @@ export function Hero() {
         <div className="animate-fade-up">
           <p className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/70 px-3.5 py-1.5 text-xs font-medium text-muted-foreground backdrop-blur">
             <Sparkles className="size-3.5 text-highlight" aria-hidden />
-            New cohort enquiries open
+            Project-based AI courses
           </p>
           <h1 id="hero-title" className="mt-6 text-4xl font-semibold leading-[1.05] sm:text-5xl lg:text-6xl xl:text-[4.25rem]">
             Build the future <br className="hidden sm:block" />
